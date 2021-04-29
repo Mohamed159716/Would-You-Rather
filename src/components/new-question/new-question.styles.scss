@@ -1,0 +1,55 @@
+.new-question {
+    margin: auto;
+    text-align: center;
+    width: 60%;
+    margin-top: 20px;
+    color: #333;
+
+    .form-container {
+        margin-top: 20px;
+        box-shadow: 0 0 5px rgba(#333, 0.5);
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        padding: 30px;
+
+        input {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 2px rgba(#333, 0.5);
+            border-radius: 4px;
+            padding: 5px 10px;
+            color: #2980b9;
+            outline: none;
+
+            &:focus {
+                border: 1px solid #2980b9;
+            }
+        }
+
+        button {
+            width: 100%;
+            border-radius: 4px;
+            padding: 5px 10px;
+            background: #2980b9;
+            color: #fff;
+            border: none;
+            outline: none;
+            box-shadow: 0 0 4px rgba(#2980b9, 0.3);
+            cursor: pointer;
+            transition: 0.2s ease-in-out;
+
+            &:hover {
+                box-shadow: 0 0 4px rgba(#2980b9, 0.6);
+            }
+
+            &.disabled {
+                opacity: 0.5;
+                cursor: no-drop;
+            }
+        }
+    }
+}

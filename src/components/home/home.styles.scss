@@ -1,0 +1,27 @@
+.home-container {
+    margin: auto;
+    text-align: center;
+    width: 60%;
+
+    .btn-box {
+        margin-top: 8px;
+        margin-bottom: 15px;
+
+        button {
+            padding: 10px;
+            margin-left: 4px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s ease-out;
+
+            &.active,
+            &:hover {
+                background: rgb(243, 243, 243);
+                color: #2980b9;
+                box-shadow: 0 0 3px rgba(#2980b9, 0.5);
+                border: 1px solid #2980b9;
+            }
+        }
+    }
+}

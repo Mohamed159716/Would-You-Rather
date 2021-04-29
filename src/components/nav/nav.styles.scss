@@ -1,0 +1,81 @@
+nav {
+    background: #fff;
+    box-shadow: 0 0 3px rgba(#333, 0.5);
+    padding: 5px 0;
+
+    .nav-container {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+
+        @media (max-width: 600px) {
+            width: 100%;
+        }
+
+        @media (max-width: 992px) {
+            & {
+                flex-direction: column-reverse;
+                margin: 9px auto;
+            }
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+
+            li {
+                margin-right: 10px;
+                a {
+                    text-decoration: none;
+                    font-size: 1.1em;
+                    color: #333;
+                    position: a;
+
+                    &.active {
+                        color: #2980b9;
+                    }
+                }
+            }
+        }
+
+        .data-box {
+            display: flex;
+            align-items: center;
+            color: #333;
+
+            @media (max-width: 992px) {
+                & {
+                    margin-bottom: 10px;
+                }
+            }
+
+            img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                margin-left: 10px;
+                box-shadow: 0 0 5px rgba(#ccc, 0.4);
+                padding: 1px;
+            }
+
+            .logout-box {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                color: #e74c3c;
+
+                .logout {
+                    font-size: 1.4em;
+                    font-weight: bold;
+                    margin-left: 15px;
+                }
+                &::after {
+                    content: "Logout";
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }
+}
