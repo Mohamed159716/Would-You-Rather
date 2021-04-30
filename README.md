@@ -1,5 +1,7 @@
 # Would You Rather
 
+## [Demo](https://mohamed159716.github.io/Would-You-Rather/)
+
 Would You Rather is just a play game that lets a user play the “Would You Rather?” game. The game goes like this: A user is asked a question in the form: “Would you rather [option A] or [option B] ?”. Answering "neither" or "both" is against the rules.
 
 In the app, users will be able to answer questions which questions they haven’t answered, how other people have voted, post questions, and the ranking of users on the leaderboard.
