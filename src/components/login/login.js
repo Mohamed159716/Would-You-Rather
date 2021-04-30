@@ -31,7 +31,12 @@ class Login extends Component {
         const { userId } = this.state;
         this.props.dispatch(handleSetAuthedUser(userId));
 
-        this.props.history.push("/");
+        const pathName =
+            this.props.location.state === undefined
+                ? "/home"
+                : this.props.location.state.from;
+
+        this.props.history.push(pathName.pathname);
     };
 
     render() {

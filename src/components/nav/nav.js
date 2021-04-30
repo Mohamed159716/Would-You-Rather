@@ -18,6 +18,10 @@ class Nav extends Component {
     };
 
     render() {
+        if (!this.props.currentUser) {
+            return true;
+        }
+
         const {
             currentUser: { name, avatarURL },
         } = this.props;

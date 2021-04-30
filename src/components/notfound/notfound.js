@@ -1,4 +1,6 @@
 import React from "react";
+import { withRouter } from "react-router-dom";
+
 import notfound from "../../notfound.svg";
 
 import "./notfound.styles.scss";
@@ -14,4 +16,4 @@ const NotFound = ({ history }) => {
     );
 };
 
-export default NotFound;
+export default withRouter(NotFound);

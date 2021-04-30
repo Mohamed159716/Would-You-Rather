@@ -3,6 +3,10 @@ nav {
     box-shadow: 0 0 3px rgba(#333, 0.5);
     padding: 5px 0;
 
+    &.hidden {
+        display: none;
+    }
+
     .nav-container {
         width: 60%;
         display: flex;

@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 
 import "./poll-answer.styles.scss";
 import { handleSaveQuestionAnswer } from "./../../actions/questions";
+import NotFound from "../notfound/notfound";
 
 class PollAnswer extends Component {
     state = {
@@ -29,6 +30,10 @@ class PollAnswer extends Component {
     };
 
     render() {
+        if (!this.props.currentQuestion) {
+            return <NotFound />;
+        }
+
         const {
             questionUser: { name, avatarURL },
             currentQuestion: { optionOne, optionTwo },
@@ -78,7 +83,7 @@ class PollAnswer extends Component {
 
 function mapStateToProps({ users, authedUser, questions }, { questionId }) {
     const currentQuestion = questions[questionId];
-    const questionUser = users[currentQuestion.author];
+    const questionUser = currentQuestion ? users[currentQuestion.author] : "";
 
     return {
         authedUser,
