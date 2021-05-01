@@ -30,7 +30,7 @@ class Nav extends Component {
                 <div className="nav-container">
                     <ul>
                         <li>
-                            <NavLink to="/" exact activeClassName="active">
+                            <NavLink to="/home" exact activeClassName="active">
                                 Home
                             </NavLink>
                         </li>
